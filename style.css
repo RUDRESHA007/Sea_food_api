@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+}
+h1{
+    position: fixed;
+    top:0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(189, 115, 88);
+    text-align: center;
+    font-size: 3rem;
+    color: aqua;
+}
+.cards{
+    margin-top: 4rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1rem;
+    background-color: rgb(96, 134, 141);
+    width: 100%;
+    height: auto;
+}
+.cards .card{
+    position: relative;
+
+    width: 15rem;
+    height: 15rem;
+    background-color: rgb(190, 29, 29);
+}
+.cards .card img{        
+
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+.cards .card  h1
+{
+    z-index: 1;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    opacity: 0;
+  position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    text-align: center;    
+    top:0rem;
+    color:rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    padding: 2rem;
+}
+.cards .card:hover  h1
+{
+    opacity: 1;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+    background-color: rgba(71, 66, 66, 0.632);
+}
